@@ -20,7 +20,7 @@ This project is to create a SQL analytics database for a music streaming startup
 {"artist_id": "ARD7TVE1187B99BFB1", "artist_latitude": null, "artist_location": "California - LA", "artist_longitude": null, "artist_name": "Casual", "duration": 218.93179, "num_songs": 1, "song_id": "SOMZWCG12A8C13C480", "title": "I Didn't Mean To", "year": 0}
 ```
 
-- **Log Dataset**: files in the dataset you'll be working with are partitioned by year and month e.g. */data/log_data.*json. Sample:
+- **Log Dataset**: files in the dataset we'll be working with are partitioned by year and month e.g. */data/log_data.*json. Sample:
 
 ```
 {"artist": "Stephen Lynch", "auth": "Logged In", "firstName": "Jayden", "gender": "M", "itemInSession": 0, "lastName": "Bell", "length": 182.85669, "level": "free", "location": "Dallas-Fort Worth-Arlington", "method": "TX PUT", "page": "NextSong", "registration": 1.540992.., "sessionId": "829", "song":"Jim Henson's Dead", "status": 200, "ts": 1543537327796, "userAgent": "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT...", "userId": 91}
@@ -34,7 +34,7 @@ and  referencing four dimensional tables *songs*, *artists*, *users* and *time*,
 
 On why to use a relational database for this case:
 
-- The data types are structured (we know before-hand the structure of the jsons we need to analyze, and where and how to extract and transform each field)
+- The data types are structured 
 - The amount of data we need to analyze is not big enough to require big data related solutions.
 - This structure will enable the analysts to aggregate the data efficiently
 - Ability to use SQL that is more than enough for this kind of analysis
