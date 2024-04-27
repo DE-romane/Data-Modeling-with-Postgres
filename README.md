@@ -1,6 +1,6 @@
 # Sparkify ETL with Postgres and Python
 
-In this project, we'll learned on data modeling with Postgres and build an ETL pipeline using Python.
+data modeling with Postgres and build an ETL pipeline using Python.
 
 We will follow the following steps:
 - Data modeling with Postgres
